@@ -16,7 +16,7 @@ import time
 root =Tk()
 root.title('Bliss Box - MP3 Player')
 root.geometry('320x450')
-photo = ImageTk.PhotoImage(Image.open("logo.png"))
+photo = ImageTk.PhotoImage(Image.open("images/logo.png"))
 root.iconphoto(True, photo)
 
 bgcolour = '#ADB3BD'
@@ -184,8 +184,8 @@ def mute_music():
         muted = TRUE
 
 
-volumephoto =ImageTk.PhotoImage(Image.open("volume.png").resize((30, 30)))
-mutephoto =ImageTk.PhotoImage(Image.open("mute.png").resize((30, 30)))
+volumephoto =ImageTk.PhotoImage(Image.open("images/volume.png").resize((30, 30)))
+mutephoto =ImageTk.PhotoImage(Image.open("images/mute.png").resize((30, 30)))
 
 
 def del_song():
@@ -223,11 +223,11 @@ time_bar.pack(fill=X, side=BOTTOM, ipady=2)
 control_frame = Frame(root, background=bgcolour)
 control_frame.pack(pady=25)
 
-prev_img = ImageTk.PhotoImage(Image.open("prev.png").resize((50, 50)))
-pause_img = ImageTk.PhotoImage(Image.open("pause.png").resize((50, 50)))
-play_img = ImageTk.PhotoImage(Image.open("play.png").resize((42,42)))
-stop_img = ImageTk.PhotoImage(Image.open("stop.png").resize((50, 50)))
-next_img = ImageTk.PhotoImage(Image.open("next.png").resize((50, 50)))
+prev_img = ImageTk.PhotoImage(Image.open("images/prev.png").resize((50, 50)))
+pause_img = ImageTk.PhotoImage(Image.open("images/pause.png").resize((50, 50)))
+play_img = ImageTk.PhotoImage(Image.open("images/play.png").resize((42,42)))
+stop_img = ImageTk.PhotoImage(Image.open("images/stop.png").resize((50, 50)))
+next_img = ImageTk.PhotoImage(Image.open("images/next.png").resize((50, 50)))
 
 # Create Buttons
 prev_button = Button(control_frame, image=prev_img, borderwidth=0, background=bgcolour,activebackground=bgcolour, command=prev_)
